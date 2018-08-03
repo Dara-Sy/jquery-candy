@@ -20,3 +20,19 @@ $("h1").removeClass("correct");
 $('option').addClass("wrong");
 
 $(".or").toggleClass("done");
+
+$("button").click(function(){
+  $(this).css("background", "pink");
+});
+
+$("button").click(function(){
+  let text = $(this).text();
+  console.log("You clicked " + text);
+});
+
+
+$("input[type='text']").keypress(function(event){
+  if(event.which === 13){
+    alert("you hit enter");
+  }
+});
