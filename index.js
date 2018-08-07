@@ -36,3 +36,15 @@ $("input[type='text']").keypress(function(event){
     alert("you hit enter");
   }
 });
+
+$("button").on("mouseenter", function() {
+  /* Act on the event */
+  $(this).css("font-weight", "bold");
+});
+
+$("button").on("mouseleave", function() {
+  /* Act on the event */
+  $(this).css("font-weight", "bold");
+});
+
+
